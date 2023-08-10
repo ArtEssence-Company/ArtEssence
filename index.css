@@ -9,11 +9,12 @@
   --cor-3: #e55bb3;
   --cor-4: #f4b424;
   --cor-5: #c886fa;
-  --letra-branca: #fff;
+  --letra-pag1: #000000;
+  --branco: #fff;
 }
 
 .pag-principal {
-  background-image: url(bg-principal-webp.webp);
+  background-image: url(bg-principal.jpg);
   background-repeat: no-repeat;
   min-height: 500px;
   background-attachment: fixed;
@@ -21,30 +22,57 @@
   background-size: cover;
   width: 100%;
   height: 100vh;
-  color: var(--letra-branca);
+  color: var(--letra-pag1);
 }
 
 .pag-principal h1 {
+  font-size: 35px;
   padding: 16px 0px 0px 18px;
 }
 
 .pag-principal p {
+  font-size: 17px;
   padding: 0px 0px 0px 18px;
 }
 
+.grid-nav {
+  display: grid;
+  grid-template-columns: 30% 50%;
+}
+
 nav {
+  padding-top: 18px;
   display: flex;
   justify-content: center;
 }
 
 nav ul li {
+  margin-left: 10px;
   float: left;
   display: flex;
+  padding:7px 10px 7px 10px;
+  font-size: 16px;
 
+}
+
+nav ul li:hover {
+  background-color: var(--branco);
+  border-radius: 6px;
+  opacity: 0.6;
+}
+
+nav ul li a {
+  text-decoration: none;
+  color: var(--letra-branca);
 }
 
 .pag-2 {
   background-color: var(--cor-2);
   width: 100%;
   height: 100vh;
+}
+
+footer {
+  height: 60vh;
+  background-color: #d6d6d6;
 }
