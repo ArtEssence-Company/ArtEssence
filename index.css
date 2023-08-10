@@ -1,14 +1,31 @@
+html {
+  scroll-behavior: smooth;
+}
+
 * {
   margin: 0;
   padding: 0;
 }
 
+
+/*
+
+
+ font-family: 'Dancing Script', cursive;
+font-family: 'Tangerine', cursive; 
+
+
+*/
+
+
 :root {
+  --instagram: rgb(57, 255, 83);
   --cor-1: #228892;
-  --cor-2: #000000;
+  --cor-2: #fafafa;
   --cor-3: #e55bb3;
   --cor-4: #f4b424;
   --cor-5: #c886fa;
+  --cor-6: rgb(0, 0, 0);
   --letra-pag1: #000000;
   --branco: #fff;
 }
@@ -26,22 +43,25 @@
 }
 
 .pag-principal h1 {
-  font-size: 35px;
+  font-family: 'Tangerine', cursive;
+  font-size: 70px;
   padding: 16px 0px 0px 18px;
 }
 
 .pag-principal p {
-  font-size: 17px;
+  font-size: 18px;
   padding: 0px 0px 0px 18px;
 }
 
-.grid-nav {
+#grid-nav {
+  position: fixed;
   display: grid;
-  grid-template-columns: 30% 50%;
+  width: 100%;
+  grid-template-columns: 30% 50% 20%;
 }
 
 nav {
-  padding-top: 18px;
+  padding-top: 30px;
   display: flex;
   justify-content: center;
 }
@@ -70,9 +90,39 @@ nav ul li a {
   background-color: var(--cor-2);
   width: 100%;
   height: 100vh;
+  color: rgb(3, 3, 3);
+}
+
+.pag-3 {
+  width: 100%;
+  height: 100vh;
+  background-color: var(--cor-6);
 }
 
 footer {
   height: 60vh;
   background-color: #d6d6d6;
+}
+
+.pos-footer {
+  height: 20vh;
+  background-color: #000000;
+}
+
+.pos-footer h2 {
+  color: var(--branco);
+  font-size: 15px;
+  text-align: center;
+  padding-top: 80px;
+}
+
+.pag1-rede-social i {
+  font-size: 30px;
+  padding-left: 20px;
+  padding-top: 30px;
+}
+
+.sticky {
+  background-color: #fff;
+  opacity: 0.6;
 }
