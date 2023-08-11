@@ -19,14 +19,16 @@ font-family: 'Tangerine', cursive;
 
 
 :root {
-  --instagram: rgb(57, 255, 83);
+  --whatsapp: rgb(57, 255, 83);
+  --instagram: rgb(0, 0, 0);
   --cor-1: #228892;
   --cor-2: #fafafa;
   --cor-3: #e55bb3;
   --cor-4: #f4b424;
   --cor-5: #c886fa;
-  --cor-6: rgb(0, 0, 0);
+  --cor-6: rgb(26, 24, 24);
   --letra-pag1: #000000;
+  --letra-pag3: #fff;
   --branco: #fff;
 }
 
@@ -55,6 +57,7 @@ font-family: 'Tangerine', cursive;
 
 #grid-nav {
   position: fixed;
+  display: -moz-grid;
   display: grid;
   width: 100%;
   grid-template-columns: 30% 50% 20%;
@@ -93,11 +96,132 @@ nav ul li a {
   color: rgb(3, 3, 3);
 }
 
+.pag-2 h2 {
+  font-family: 'Tangerine', cursive;
+  text-align: center;
+  padding: 60px 0 0 0;
+  font-size: 65px;
+}
+
+.pag-2 p {
+  padding: 10px 0 0 0;
+  text-align: center;
+  font-size: 18px;
+}
+
+.grid-aulas {
+  padding: 130px 0 0 0;
+  justify-content: center;
+  display: grid;
+  display: -moz-grid;
+  grid-template-columns: 20% 20% 16%;
+}
+
+.grid-aulas-2 {
+  padding: 30px 0 0 0;
+  display: grid;
+  display: -moz-grid;
+  grid-template-columns: 50% 99% 1%;
+}
+
+.box-aulas {
+  /* background-color: #9e9e9e; */
+  width: 300px;
+  height: 300px;
+}
+
+.box-aulas h3 {
+  text-align: center;
+}
+
+.pag1-rede-social i {
+  font-size: 30px;
+  padding-left: 20px;
+  padding-top: 30px;
+}
+
+.pag1-rede-social i:hover {
+  transform: scale(1.1);
+}
+
+.box-aulas img {
+  padding: 10% 0 0 36%;
+  width: 80px;
+  height: 80px;
+}
+
+
+
+/* pagina 3 */
+
+
 .pag-3 {
   width: 100%;
-  height: 100vh;
+  height: 110vh;
   background-color: var(--cor-6);
+  color: var(--letra-pag3);
 }
+
+.pag-3 h2 {
+  font-family: 'Tangerine', cursive;
+  text-align: center;
+  padding: 60px 0 0 0;
+  font-size: 65px;
+}
+
+.pag-3 p {
+  padding: 10px 0 0 0;
+  text-align: center;
+  font-size: 18px;
+}
+
+.grid-salao {
+  padding: 130px 0 0 0;
+  justify-content: center;
+  display: grid;
+  display: -moz-grid;
+  grid-template-columns: 20% 20% 16%;
+}
+
+.grid-salao-2 {
+  padding: 30px 0 0 0;
+  display: grid;
+  display: -moz-grid;
+  grid-template-columns: 50% 99% 1%;
+}
+
+.box-salao {
+  /* background-color: #9e9e9e; */
+  width: 300px;
+  height: 300px;
+}
+
+.box-salao h3 {
+  text-align: center;
+}
+
+.pag1-rede-social i {
+  font-size: 30px;
+  padding-left: 20px;
+  padding-top: 30px;
+}
+
+.pag1-rede-social i:hover {
+  transform: scale(1.1);
+}
+
+.box-salao img {
+  padding: 10% 0 0 36%;
+  width: 80px;
+  height: 80px;
+}
+
+
+
+
+
+
+
 
 footer {
   height: 60vh;
@@ -116,11 +240,7 @@ footer {
   padding-top: 80px;
 }
 
-.pag1-rede-social i {
-  font-size: 30px;
-  padding-left: 20px;
-  padding-top: 30px;
-}
+
 
 .sticky {
   background-color: #fff;
