@@ -116,11 +116,12 @@ nav ul li a {
   display: grid;
   display: -moz-grid;
   max-width: 100%;
-  grid-template-columns: 20% 20% 16%;
+  column-gap: 5%;
+  grid-template-columns: 20% 20% 20%;
 }
 
 .box-aulas {
-  /* background-color: #9e9e9e; */
+  max-width: 250px;
   width: 300px;
   height: 300px;
 }
@@ -155,6 +156,7 @@ nav ul li a {
   padding: 8px 6px 6px 8px;
   background-color: #000000;
   color: #d6d6d6;
+  margin-bottom: 50px;
 }
 
 
@@ -187,6 +189,7 @@ nav ul li a {
   justify-content: center;
   display: grid;
   display: -moz-grid;
+  column-gap: 5%;
   grid-template-columns: 20% 20% 20% 20%;
 }
 
