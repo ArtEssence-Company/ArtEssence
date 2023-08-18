@@ -27,6 +27,8 @@ font-family: 'Tangerine', cursive;
   --cor-4: #f4b424;
   --cor-5: #c886fa;
   --cor-6: rgb(26, 24, 24);
+  --letra-nav: #000000;
+  --fundo-nav: #ffffff;
   --letra-pag1: #000000;
   --letra-pag3: #fff;
   --branco: #fff;
@@ -40,7 +42,7 @@ font-family: 'Tangerine', cursive;
   background-position: center;
   background-size: cover;
   width: 100%;
-  height: 100vh;
+  height: 120vh;
   color: var(--letra-pag1);
 }
 
@@ -56,7 +58,8 @@ font-family: 'Tangerine', cursive;
 }
 
 #grid-nav {
-  position: fixed;
+  background-color: var(--fundo-nav);
+  position: sticky;
   display: -moz-grid;
   display: grid;
   width: 100%;
@@ -79,14 +82,24 @@ nav ul li {
 }
 
 nav ul li:hover {
-  background-color: var(--branco);
   border-radius: 6px;
-  opacity: 0.6;
+  transform: scale(1.1);
+}
+
+#scroll-navbar {
+  width: 100%;
+  justify-content: center;
+  display: flex;
+  position:fixed;
+}
+
+#scroll-navbar ul li {
+  float: left;
 }
 
 nav ul li a {
   text-decoration: none;
-  color: var(--letra-branca);
+  color: var(--letra-nav);
 }
 
 .pag-2 {
@@ -111,19 +124,18 @@ nav ul li a {
 }
 
 .grid-aulas {
-  padding: 100px 0 0 0;
+  padding: 100px 1% 40px 1%;
   justify-content: center;
   display: grid;
   display: -moz-grid;
   max-width: 100%;
   column-gap: 5%;
-  grid-template-columns: 20% 20% 20%;
+  grid-template-columns: repeat(auto-fit, 300px);
 }
 
 .box-aulas {
-  max-width: 250px;
-  width: 300px;
-  height: 300px;
+  width: 1fr;
+  height: 1fr;
 }
 
 .box-aulas h3 {
@@ -141,7 +153,7 @@ nav ul li a {
 }
 
 .box-aulas img {
-  padding: 10% 0 0 36%;
+  padding: 10% 0 0 40%;
   width: 80px;
   height: 80px;
 }
@@ -185,20 +197,19 @@ nav ul li a {
 }
 
 .grid-salao {
-  padding: 100px 0 0 0;
+  padding: 100px 1% 40px 1%;
   justify-content: center;
   display: grid;
   display: -moz-grid;
-  column-gap: 5%;
-  grid-template-columns: 20% 20% 20% 20%;
+  column-gap: 1%;
+  grid-template-columns: repeat(auto-fit, 350px);
 }
 
 
 
 .box-salao {
-  /* background-color: #9e9e9e; */
-  width: 300px;
-  height: 300px;
+  width: 1fr;
+  height: 1fr;
 }
 
 .box-salao h3 {
@@ -216,7 +227,7 @@ nav ul li a {
 }
 
 .box-salao img {
-  padding: 10% 0 0 36%;
+  padding: 10% 0 0 40%;
   width: 80px;
   height: 80px;
 }
