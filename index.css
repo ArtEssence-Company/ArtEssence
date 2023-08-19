@@ -243,8 +243,29 @@ footer {
   height: 60vh;
   background-color: #d6d6d6;
   display: grid;
-  grid-template-columns: 50% 50%;
+  column-gap: 5%;
+  grid-template-columns: 1fr 1fr;
 }
+
+.siga-redes, .contato h2 {
+  text-align: center;
+  padding: 30px 0 0 0;
+}
+
+.whatsapp-footer, .email-footer {
+  font-size: 12px;
+  position: flex;
+  float: left;
+  text-align: center;
+}
+
+.contato {
+  display: grid;
+  grid-template-columns: auto;
+
+}
+
+
 
 .pos-footer {
   height: 20vh;
@@ -255,7 +276,7 @@ footer {
   color: var(--branco);
   font-size: 15px;
   text-align: center;
-  padding-top: 80px;
+  padding-top: 2%;
 }
 
 
